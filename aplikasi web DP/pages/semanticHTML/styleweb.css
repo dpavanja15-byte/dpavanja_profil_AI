@@ -1,0 +1,180 @@
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+   ========================================== */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+/* ==========================================
+   LAYOUT (MAIN & ASIDE)
+   ========================================== */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1.5rem;
+}
+
+/* ==========================================
+   CARD & SECTIONS
+   ========================================== */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2, h3 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.profile-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Kompetensi List */
+.skills-list {
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Prospek Kerja Grid */
+.grid-jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+}
+
+.job-item {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #bfdbfe;
+}
+
+/* Article */
+.meta-date {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 0.75rem;
+}
+
+/* Aside Elements */
+.aside-card {
+    background-color: #ffffff;
+}
+
+.info-badge {
+    margin-top: 1rem;
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   RESPONSIVE (MOBILE FRIENDLY)
+   ========================================== */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    nav .nav-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}

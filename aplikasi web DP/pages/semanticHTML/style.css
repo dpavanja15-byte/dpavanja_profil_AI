@@ -1,0 +1,39 @@
+/* Header */
+.header {
+    background-color:aqua;
+    color:blue;
+    text-align: center;
+    padding: 30px;
+}
+/* Menu */
+.menu {
+    background-color:darkblue;
+    padding: 15px;
+    text-align: center;
+}
+.menu a {
+    color:aquamarine;
+    text-decoration: none;
+    margin: 0 15px;
+}
+/* Content */
+.content {
+    background-color:blueviolet;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+}
+/* Informasi */
+.info {
+    background-color:darkgrey;
+    padding: 20px;
+    margin: 20px;
+    border-left: 5px solid whitesmoke;
+}
+/* Footer */
+.footer {
+    background-color:blanchedalmond;
+    color:blueviolet;
+    text-align: center;
+    padding: 15px;
+}
